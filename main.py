@@ -19,9 +19,7 @@ def receive_data():
         writer = csv.writer(file)
         writer.writerow([time, pressure])
 
-    return jsonify()
+    return jsonify(200)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5001)
-
-#192.168.1.118
